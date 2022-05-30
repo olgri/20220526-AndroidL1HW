@@ -1,5 +1,5 @@
 class State(val name: String = "Belarus", val capital: City) {
-    var regions: List<Region> = emptyList<Region>()
+    var regions: List<Region> = emptyList()
     fun addRegion(region: Region) {
         regions += region
     }
@@ -24,7 +24,7 @@ class State(val name: String = "Belarus", val capital: City) {
 }
 
 class Region(val name: String, val capital: City, val square: Int) {
-    var districts: List<District> = emptyList<District>()
+    var districts: List<District> = emptyList()
     fun addDistrict(district: District) {
         districts += district
     }
@@ -35,7 +35,7 @@ class Region(val name: String, val capital: City, val square: Int) {
 }
 
 class District(val name: String) {
-    var cities: List<City> = emptyList<City>()
+    var cities: List<City> = emptyList()
     fun addCity(city: City) {
         cities += city
     }
